@@ -7,23 +7,17 @@ import {
     UserOutlined
 } from '@ant-design/icons';
 import { Menu } from 'antd';
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { StyledSider } from './Sider.style';
 
-export class Sider extends Component {
+export class Sider extends React.Component {
     state = {
         collapsed: false
     };
 
     onCollapse = (collapsed: boolean) => {
         this.setState({ collapsed });
-    };
-
-    toggle = () => {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
     };
 
     render() {
