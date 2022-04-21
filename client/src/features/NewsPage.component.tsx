@@ -1,38 +1,44 @@
-import { Card, Image } from 'antd';
-import React from 'react';
+import { Card } from 'antd';
+import React, { FC, PropsWithChildren, useEffect } from 'react';
+import { connect } from 'react-redux';
+import { News } from '../common/News';
+import { getNews } from '../store/actions/news.actions';
+import { RootState } from '../store/reducers/rootReducer';
 
-export const NewsPage = () => {
+interface NewsPageProps {
+    news: News[];
+    getNewsAction: () => void;
+}
+
+export const NewsPage: FC<NewsPageProps> = ({
+    news,
+    getNewsAction
+}: PropsWithChildren<NewsPageProps>) => {
+    useEffect(() => {
+        try {
+            getNewsAction();
+        } catch (e) {
+            console.log(e);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     return (
         <>
             <h1>Новости и объявления:</h1>
-            <Card title="Внимание! Школьная ярмарка 2022!">
-                <p>Приходите на нашу ярмарку</p>
-                <Image
-                    width={800}
-                    src="https://electrostal.ru/image/?item=Material5961&dirtyAlias=c6a123c135-1_1200x600.jpg"
-                />
-            </Card>
-            <Card title="Внимание! Школьная ярмарка 2022!">
-                <p>Приходите на нашу ярмарку</p>
-                <Image
-                    width={800}
-                    src="https://electrostal.ru/image/?item=Material5961&dirtyAlias=c6a123c135-1_1200x600.jpg"
-                />
-            </Card>
-            <Card title="Внимание! Школьная ярмарка 2022!">
-                <p>Приходите на нашу ярмарку</p>
-                <Image
-                    width={800}
-                    src="https://electrostal.ru/image/?item=Material5961&dirtyAlias=c6a123c135-1_1200x600.jpg"
-                />
-            </Card>
-            <Card title="Внимание! Школьная ярмарка 2022!">
-                <p>Приходите на нашу ярмарку</p>
-                <Image
-                    width={800}
-                    src="https://electrostal.ru/image/?item=Material5961&dirtyAlias=c6a123c135-1_1200x600.jpg"
-                />
-            </Card>
+            {news.map((item: News) => (
+                <Card title={item.title}>
+                    <p>{item.description}</p>
+                    <p>{item.author}</p>
+                </Card>
+            ))}
         </>
     );
 };
+
+const mapStateToProps = (state: RootState) => ({
+    news: state.news.news
+});
+
+export default connect(mapStateToProps, {
+    getNewsAction: getNews
+})(NewsPage);

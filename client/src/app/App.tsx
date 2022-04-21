@@ -4,7 +4,7 @@ import { ClassPage } from '../features/ClassPage.component';
 import { HomePage } from '../features/HomePage.component';
 import { LoginPage } from '../features/LoginPage.component';
 import { MarksPage } from '../features/MarksPage.component';
-import { NewsPage } from '../features/NewsPage.component';
+import NewsPage from '../features/NewsPage.component';
 import { SubjectsPage } from '../features/SubjectsPage.component';
 import { UserPage } from '../features/UserPage.component';
 import { WeekPage } from '../features/WeekPage.component';
