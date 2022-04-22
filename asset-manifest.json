@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/school-lms-app/static/css/main.b0838922.css",
+    "main.js": "/school-lms-app/static/js/main.d606c2f1.js",
+    "index.html": "/school-lms-app/index.html",
+    "main.b0838922.css.map": "/school-lms-app/static/css/main.b0838922.css.map",
+    "main.d606c2f1.js.map": "/school-lms-app/static/js/main.d606c2f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0838922.css",
+    "static/js/main.d606c2f1.js"
+  ]
+}
