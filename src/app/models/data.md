@@ -1,19 +1,19 @@
 # Content
-1. [User](##User)  
-    1. [User](####User)  
-    1. [Student](####Student)  
-    1. [Teacher](####Teacher)  
-2. [Subjects](##Subjects)  
-3. [Form](##Form)  
-4. [Mark](##Mark)  
-5. [Assignment](##Assignment)  
-6. [Schedule](##Schedule)  
-    1. [Schedule](####Schedule)  
-    1. [StudentSchedule](####StudentSchedule)  
-    1. [TeacherSchedule](####TeacherSchedule)  
-7. [Notification](##Notification )  
-8. [News](##News)  
-9. [Comment](##Comment)  
+1. [User](##user)  
+    1. [User](####user)  
+    1. [Student](####student)  
+    1. [Teacher](####teacher)  
+2. [Subjects](##subjects)  
+3. [Form](##form)  
+4. [Mark](##mark)  
+5. [Assignment](##assignment)  
+6. [Schedule](##schedule)  
+    1. [Schedule](####schedule)  
+    1. [Student Schedule](####student-schedule)  
+    1. [Teacher Schedule](####teacher-schedule)  
+7. [Notification](##notification )  
+8. [News](##news)  
+9. [Comment](##comment)  
 
 ## User
 ### imported to  
@@ -117,12 +117,12 @@ Form(StudentSchedule)*
 - durance: number - durance for this timetable in WEEKS  
 - startDate: number - start date for this specific schedule (MONDAY)  
 
-#### StudentSchedule
+#### Student Schedule
 - form: Form - schedule for which grade  
 - subjects: Subject[] - full list of subjects for this class  
 - timetable: [Subject, [string, number, number], number][] - subject, time (week day, start time, end time), room number  
 
-#### TeacherSchedule
+#### Teacher Schedule
 - forms: Form[] - what grades teach teaches  
 - subjects: Subject[] - subjects teach teaches  
 - timetable: [Subject, Form, [string, number, number], number][] - subject, form, time (week day, start time, end time), room number  
