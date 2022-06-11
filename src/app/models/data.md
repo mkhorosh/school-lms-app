@@ -1,8 +1,8 @@
-##User
-###imported to  
-_Subject(User, Teacher) Form(Teacher, Student) Assignment(Teacher, Student) Notification News Comment_  
+## User
+### imported to  
+*Subject(User, Teacher) Form(Teacher, Student) Assignment(Teacher, Student) Notification News Comment*  
   
-####User
+#### User
 login: string - user's nickname for login  
 password: string - user's password for auth  
 name: string - real name of the user  
@@ -10,14 +10,14 @@ email: string - additional way of communication + way to prove identity
 // role: string - student/teacher/administration  
 // pic: string - store pics  
 
-####Student
+#### Student
 form: Form - class user belongs to  
 isClasspresident: boolean - label to the class president  
 subjects: Subject[] - list of subjects for specified pupil  
 marks: Mark[] - array of objects w/ info about education performance  
 schedule: object w/ info about lessons  
 
-####Teacher
+#### Teacher
 forms: Form[] - all classes teach teaches  
 isHomeroomTeacher: [boolean, Form] - yes/no, if yes which grade  
 subjects: Subject[] - which subjects teaches  
@@ -26,9 +26,9 @@ schedule: object w/ info about lessons and forms
  
 
 ---
-##Subjects
-###imported to  
-_User Mark Assignment Shedule_  
+## Subjects
+### imported to  
+*User Mark Assignment Shedule*  
   
 title: string - name of subject  
 teacher: User - object w/ data on user  
@@ -40,9 +40,9 @@ attendance: [Form, User, string][] - attendance (present / absent / sick / reaso
  
 
 ---
-##Form
-###imported to  
-_User Subject Assignment Schedule News_  
+## Form
+### imported to  
+*User Subject Assignment Schedule News*  
   
 label: string - title (1a)  
 pupils: Student[] - list of the students  
@@ -53,18 +53,18 @@ room: number - homeroom
  
 
 ---
-##Mark
-###imported to  
-_User_  
+## Mark
+### imported to  
+*User*  
   
 subject: Subject - subject  
 mark: number[] - date of assessment, mark itself, homework / test / class work items for each student  
  
 
 ---
-##Assignment
-###imported to  
-_Subject_  
+## Assignment
+### imported to  
+*Subject*  
   
 text: string - text of the assignment  
 creationDate: number - date when task is given  
@@ -78,29 +78,29 @@ mark: [Form, Student, number][] - final mark for pupils of given grade
  
 
 ---
-##Schedule
-###imported to 
-_User(StudentSchedule, TeacherSchedule) Form(StudentSchedule)_  
+## Schedule
+### imported to 
+*User(StudentSchedule, TeacherSchedule) Form(StudentSchedule)*  
 
-####Shedule
+#### Shedule
 lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number  
 durance: number - durance for this timetable in WEEKS  
 startDate: number - start date for this specific schedule (MONDAY)  
 
-####Student
+#### Student
 form: Form - schedule for which grade  
 subjects: Subject[] - full list of subjects for this class  
 timetable: [Subject, [string, number, number], number][] - subject, time (week day, start time, end time), room number  
 
-####Teacher
+#### Teacher
 forms: Form[] - what grades teach teaches  
 subjects: Subject[] - subjects teach teaches  
 timetable: [Subject, Form, [string, number, number], number][] - subject, form, time (week day, start time, end time), room number  
  
 
 ---
-##Notifications 
-####mported to
+## Notifications 
+#### imported to
   
   
 updateData: number - when changes were made  
@@ -111,8 +111,8 @@ watchers: User[] - who gets the notification
  
 
 ---
-##News
-###imported to 
+## News
+### imported to 
   
   
 title: string - title  
@@ -124,9 +124,9 @@ publicationData: number - date
 comments: Comment[] - who commented  
 
 ---
-##Comment
-###imported to 
-_News_  
+## Comment
+### imported to 
+*News*  
   
 author: User - who commented  
 date: number - when commented  
