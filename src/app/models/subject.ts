@@ -1,5 +1,5 @@
 import { Base } from './base';
-import { User } from './user';
+import { User, Teacher } from './user';
 import { Form } from './form';
 import { Assignment } from './assignment';
 
@@ -15,7 +15,7 @@ attendance: [Form, User, string][] - attendance (present / absent / sick / reaso
 
 export class Subject extends Base {
     title: string
-    teacher: User
+    teacher: Teacher
     form: Form[]
     assignment: [Form, Assignment][]
     room: number

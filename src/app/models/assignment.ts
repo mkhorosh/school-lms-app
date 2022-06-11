@@ -1,7 +1,7 @@
 import { Base } from './base';
 import { Form } from './form';
 import { Subject } from './subject';
-import { User } from './user';
+import { Teacher, Student } from './user';
 
 /*
 text: string - text of the assignment
@@ -11,8 +11,8 @@ isSeen: boolean - did teacher see finished task
 isMarked: boolean - was mark announced
 dueDate: number - date to be done
 subject: Subject - name of the subject
-teacher: User - teacher to assess
-mark: [Form, User, number][] - final mark for pupils of given grade
+teacher: Teacher - teacher to assess
+mark: [Form, Student, number][] - final mark for pupils of given grade
 */
 
 export class Assignment extends Base {
@@ -24,6 +24,6 @@ export class Assignment extends Base {
     isMarked: boolean
     dueDate: number
     subject: Subject
-    teacher: User
-    marks: [Form, User, number][]
+    teacher: Teacher
+    marks: [Form, Student, number][]
 }
