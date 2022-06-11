@@ -1,136 +1,134 @@
---
-User
-imported to
-Subject(User, Teacher) Form(Teacher, Student) Assignment(Teacher, Student) Notification News Comment
+##User
+###imported to  
+_Subject(User, Teacher) Form(Teacher, Student) Assignment(Teacher, Student) Notification News Comment_  
+  
+####User
+login: string - user's nickname for login  
+password: string - user's password for auth  
+name: string - real name of the user  
+email: string - additional way of communication + way to prove identity  
+// role: string - student/teacher/administration  
+// pic: string - store pics  
 
-User
-login: string - user's nickname for login
-password: string - user's password for auth
-name: string - real name of the user
-email: string - additional way of communication + way to prove identity
-// role: string - student/teacher/administration
-// pic: string - store pics
-
-Student
-form: Form - class user belongs to
-isClasspresident: boolean - label to the class president
-subjects: Subject[] - list of subjects for specified pupil
-marks: Mark[] - array of objects w/ info about education performance
+####Student
+form: Form - class user belongs to  
+isClasspresident: boolean - label to the class president  
+subjects: Subject[] - list of subjects for specified pupil  
+marks: Mark[] - array of objects w/ info about education performance  
 schedule: object w/ info about lessons  
 
-Teacher
-forms: Form[] - all classes teach teaches
-isHomeroomTeacher: [boolean, Form] - yes/no, if yes which grade
-subjects: Subject[] - which subjects teaches
-marks: [Form, Mark][] - all marks
-schedule: object w/ info about lessons and forms
---
+####Teacher
+forms: Form[] - all classes teach teaches  
+isHomeroomTeacher: [boolean, Form] - yes/no, if yes which grade  
+subjects: Subject[] - which subjects teaches  
+marks: [Form, Mark][] - all marks  
+schedule: object w/ info about lessons and forms  
+ 
 
---
-Subjects
-imported to 
-User Mark Assignment Shedule
+---
+##Subjects
+###imported to  
+_User Mark Assignment Shedule_  
+  
+title: string - name of subject  
+teacher: User - object w/ data on user  
+form: Form[] - classes that study this subject  
+assignment: [Form, Assignment][] - array of classes and their assignments  
+room: number - numer of the specified room for subject(teacher's room)  
+marks: [Form, User][] - marks for all forms  
+attendance: [Form, User, string][] - attendance (present / absent / sick / reasonable absence)  
+ 
 
-title: string - name of subject
-teacher: User - object w/ data on user
-form: Form[] - classes that study this subject
-assignment: [Form, Assignment][] - array of classes and their assignments
-room: number - numer of the specified room for subject(teacher's room)
-marks: [Form, User][] - marks for all forms 
-attendance: [Form, User, string][] - attendance (present / absent / sick / reasonable absence)
---
+---
+##Form
+###imported to  
+_User Subject Assignment Schedule News_  
+  
+label: string - title (1a)  
+pupils: Student[] - list of the students  
+homeTeacher: Teacher - homeroom teacher  
+schedule: StudentSchedule - timetable for this class  
+classpresident: StudentSchedule - student in charge  
+room: number - homeroom  
+ 
 
---
-Form
-imported to
-User Subject Assignment Schedule News
+---
+##Mark
+###imported to  
+_User_  
+  
+subject: Subject - subject  
+mark: number[] - date of assessment, mark itself, homework / test / class work items for each student  
+ 
 
-label: string - title (1a)
-pupils: Student[] - list of the students
-homeTeacher: Teacher - homeroom teacher
-schedule: StudentSchedule - timetable for this class
-classpresident: StudentSchedule - student in charge
-room: number - homeroom
---
+---
+##Assignment
+###imported to  
+_Subject_  
+  
+text: string - text of the assignment  
+creationDate: number - date when task is given  
+isDone: boolean - yes or no  
+isSeen: boolean - did teacher see finished task  
+isMarked: boolean - was mark announced  
+dueDate: number - date to be done  
+subject: Subject - name of the subject  
+teacher: Teacher - teacher to assess  
+mark: [Form, Student, number][] - final mark for pupils of given grade  
+ 
 
---
-Mark
-imported to
-User
+---
+##Schedule
+###imported to 
+_User(StudentSchedule, TeacherSchedule) Form(StudentSchedule)_  
 
-subject: Subject - subject
-mark: number[] - date of assessment, mark itself, homework / test / class work items for each student 
---
+####Shedule
+lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number  
+durance: number - durance for this timetable in WEEKS  
+startDate: number - start date for this specific schedule (MONDAY)  
 
---
-Assignment
-imported to
-Subject
+####Student
+form: Form - schedule for which grade  
+subjects: Subject[] - full list of subjects for this class  
+timetable: [Subject, [string, number, number], number][] - subject, time (week day, start time, end time), room number  
 
-text: string - text of the assignment
-creationDate: number - date when task is given
-isDone: boolean - yes or no
-isSeen: boolean - did teacher see finished task
-isMarked: boolean - was mark announced
-dueDate: number - date to be done
-subject: Subject - name of the subject
-teacher: Teacher - teacher to assess
-mark: [Form, Student, number][] - final mark for pupils of given grade
---
+####Teacher
+forms: Form[] - what grades teach teaches  
+subjects: Subject[] - subjects teach teaches  
+timetable: [Subject, Form, [string, number, number], number][] - subject, form, time (week day, start time, end time), room number  
+ 
 
---
-Schedule
-imported to 
-User(StudentSchedule, TeacherSchedule) Form(StudentSchedule)
+---
+##Notifications 
+####mported to
+  
+  
+updateData: number - when changes were made  
+isNewMark: boolean - new mark or new assignment  
+text: string - message  
+title: string - new mark or new assignment (for pupils)  
+watchers: User[] - who gets the notification  
+ 
 
-Shedule
-lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number
-durance: number - durance for this timetable in WEEKS
-startDate: number - start date for this specific schedule (MONDAY)
+---
+##News
+###imported to 
+  
+  
+title: string - title  
+text: string -text  
+// pic: string  
+watchers: Form[] - who can see  
+author: User - who posted  
+publicationData: number - date  
+comments: Comment[] - who commented  
 
-Student
-form: Form - schedule for which grade 
-subjects: Subject[] - full list of subjects for this class
-timetable: [Subject, [string, number, number], number][] - subject, time (week day, start time, end time), room number
-
-Teacher
-forms: Form[] - what grades teach teaches
-subjects: Subject[] - subjects teach teaches
-timetable: [Subject, Form, [string, number, number], number][] - subject, form, time (week day, start time, end time), room number
---
-
---
-Notifications 
-imported to
-
-
-updateData: number - when changes were made
-isNewMark: boolean - new mark or new assignment
-text: string - message
-title: string - new mark or new assignment (for pupils)
-watchers: User[] - who gets the notification
---
-
---
-News
-imported to 
-
-
-title: string - title
-text: string -text
-// pic: string 
-watchers: Form[] - who can see
-author: User - who posted
-publicationData: number - date 
-comments: Comment[] - who commented
---
-
---
-Comment
-imported to 
-News
-
-author: User - who commented
-date: number - when commented
-message: string - comment text
---
+---
+##Comment
+###imported to 
+_News_  
+  
+author: User - who commented  
+date: number - when commented  
+message: string - comment text  
+ 
