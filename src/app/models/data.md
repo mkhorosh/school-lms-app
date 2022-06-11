@@ -5,12 +5,12 @@
 4. [Mark](#mark)  
 5. [Assignment](#assignment)  
 6. [Schedule](#schedule)  
-7. [Notification](#notification )  
+7. [Notification](#notification)  
 8. [News](#news)  
 9. [Comment](#comment)  
 
 # User 
-## imported to  
+### **imported to**  
 *Subject(User, Teacher)  
 Form(Teacher, Student)  
 Assignment(Teacher, Student)  
@@ -18,7 +18,7 @@ Notification
 News  
 Comment*  
   
-## User
+### **User**
 - login: string - user's nickname for login  
 - password: string - user's password for auth  
 - name: string - real name of the user  
@@ -26,14 +26,14 @@ Comment*
 - // role: string - student/teacher/administration  
 - // pic: string - store pics  
 
-## Student
+### **Student**
 - form: Form - class user belongs to  
 - isClasspresident: boolean - label to the class president  
 - subjects: Subject[] - list of subjects for specified pupil  
 - marks: Mark[] - array of objects w/ info about education performance  
 - schedule: object w/ info about lessons  
 
-## Teacher
+### **Teacher**
 - forms: Form[] - all classes teach teaches  
 - isHomeroomTeacher: [boolean, Form] - yes/no, if yes which grade  
 - subjects: Subject[] - which subjects teaches  
@@ -42,7 +42,7 @@ Comment*
  
 
 # Subjects
-## imported to  
+### **imported to**  
 *User  
 Mark  
 Assignment  
@@ -58,7 +58,7 @@ Shedule*
  
 
 # Form
-## imported to  
+### **imported to**  
 *User  
 Subject  
 Assignment  
@@ -74,7 +74,7 @@ News*
  
 
 # Mark
-## imported to  
+### **imported to**  
 *User*  
   
 - subject: Subject - subject  
@@ -82,7 +82,7 @@ News*
  
 
 # Assignment
-## imported to  
+### **imported to**  
 *Subject*  
   
 - text: string - text of the assignment  
@@ -97,28 +97,28 @@ News*
  
 
 # Schedule
-## imported to 
+### **imported to** 
 *User(StudentSchedule, TeacherSchedule)  
 Form(StudentSchedule)*  
 
-## Shedule
+### **Shedule**
 - lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number  
 - durance: number - durance for this timetable in WEEKS  
 - startDate: number - start date for this specific schedule (MONDAY)  
 
-## Student Schedule
+### **Student Schedule**
 - form: Form - schedule for which grade  
 - subjects: Subject[] - full list of subjects for this class  
 - timetable: [Subject, [string, number, number], number][] - subject, time (week day, start time, end time), room number  
 
-## Teacher Schedule
+### **Teacher Schedule**
 - forms: Form[] - what grades teach teaches  
 - subjects: Subject[] - subjects teach teaches  
 - timetable: [Subject, Form, [string, number, number], number][] - subject, form, time (week day, start time, end time), room number  
  
 
 # Notification 
-## imported to
+### **imported to**
 &nbsp;  
 
 - updateData: number - when changes were made  
@@ -129,7 +129,7 @@ Form(StudentSchedule)*
 
 
 # News
-## imported to 
+### **imported to** 
 &nbsp;  
 
 - title: string - title  
@@ -142,7 +142,7 @@ Form(StudentSchedule)*
 
 
 # Comment
-## imported to 
+### **imported to** 
 *News*  
 
 - author: User - who commented  
