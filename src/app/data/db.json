@@ -1,0 +1,215 @@
+{
+    "user": [
+        {
+            "login": "pupil1",
+            "password": "pupil#1",
+            "name": "Беляева Сильвия Кирилловна",
+            "email": "pupil1@email.com",
+            "role": "student",
+            "isClassPresident": true,
+            "isHomeTeacher": false,
+            "form": "5A",
+            "subjects": [
+                "Русский язык", 
+                "Литература", 
+                "Математика", 
+                "Английский язык", 
+                "Природоведение", 
+                "Физическая культура", 
+                "Изобразительное искусство", 
+                "Музыкальное воспитание"],
+            "marks": [{
+                "subject": "Русский язык",
+                "stats": {
+                    "date": 20210901,
+                    "mark": 5,
+                    "activity": "классная работа"
+                } 
+            }],
+            "schedule": {
+                "lessonsNet": [
+                    {
+                        "day": "Понедельник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "day": "Понедельник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "day": "Понедельник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "day": "Понедельник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "day": "Понедельник",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "day": "Вторник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "day": "Вторник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "day": "Вторник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "day": "Вторник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "day": "Вторник",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "day": "Среда",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "day": "Среда",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "day": "Среда",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "day": "Среда",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "day": "Среда",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "day": "Четверг",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "day": "Четверг",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "day": "Четверг",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "day": "Четверг",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "day": "Четверг",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "day": "Пятница",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "day": "Пятница",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "day": "Пятница",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "day": "Пятница",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "day": "Пятница",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    }
+                ],
+                "startDate": 20210901,
+                "durance": 8,
+                "teachersForm": [],
+                "studentsForm": "5A",
+                "studentSubjects": [
+                    "Русский язык", 
+                    "Литература", 
+                    "Математика", 
+                    "Английский язык", 
+                    "Природоведение", 
+                    "Физическая культура", 
+                    "Изобразительное искусство", 
+                    "Музыкальное воспитание"
+                ],
+                "teacherSubjects": [],
+                "studentTimetable": [
+                    {
+                        "subject":"",
+                        "time":[
+                            {
+                                "day": "Пятница",
+                                "startTime": 1130, 
+                                "endTime": 1210
+                            }
+                        ],
+                        "room": 101 
+                    }
+                ],
+                "teacherTimetable": [
+                    {
+                        "subject":"",
+                        "form": "",
+                        "time":[
+                            {
+                                "day": "Пятница",
+                                "startTime": 1130, 
+                                "endTime": 1210
+                            }
+                        ],
+                        "room": 101 
+                    }
+                ]
+            }
+        },
+        {
+            "login": "",
+            "password": "",
+            "name": "",
+            "email": "",
+            "role": "",
+            "isClassPresident": "",
+            "isHomeTeacher": "",
+            "form": "",
+            "subjects": "",
+            "marks": "",
+            "schedule": ""
+        }
+    ]
+}
