@@ -4,7 +4,6 @@ import { Subject } from './subject';
 
 /*
 Shedule
-lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number
 durance: number - durance for this timetable in WEEKS
 startDate: number - start date for this specific schedule (MONDAY)
 
@@ -20,9 +19,8 @@ timetable: [Subject, Form, [string, number, number], number][] - subject, form, 
 */
 
 export class Schedule extends Base {
-    lessonsNet: [string, number, number][]
-    durance: number
     startDate: number
+    durance: number
 }
 
 export class StudentSchedule extends Schedule {

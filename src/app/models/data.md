@@ -23,13 +23,12 @@ Comment*
 - password: string - user's password for auth  
 - name: string - real name of the user  
 - email: string - additional way of communication + way to prove identity  
-- // role: string - student/teacher/administration  
+- role: string - student/teacher/administration  
 - // pic: string - store pics  
 
 ### **Student**
 - form: Form - class user belongs to  
 - isClasspresident: boolean - label to the class president  
-- subjects: Subject[] - list of subjects for specified pupil  
 - marks: Mark[] - array of objects w/ info about education performance  
 - schedule: object w/ info about lessons  
 
@@ -53,8 +52,7 @@ Shedule*
 - form: Form[] - classes that study this subject  
 - assignment: [Form, Assignment][] - array of classes and their assignments  
 - room: number - numer of the specified room for subject(teacher's room)  
-- marks: [Form, User][] - marks for all forms  
-- attendance: [Form, User, string][] - attendance (present / absent / sick / reasonable absence)  
+- marks: [Form, Student][] - marks for all forms  
  
 
 # Form
@@ -67,6 +65,7 @@ News*
   
 - label: string - title (1a)  
 - pupils: Student[] - list of the students  
+- subjects: Subject[] - subjects for one form
 - homeTeacher: Teacher - homeroom teacher  
 - schedule: StudentSchedule - timetable for this class  
 - classpresident: StudentSchedule - student in charge  
@@ -78,20 +77,21 @@ News*
 *User*  
   
 - subject: Subject - subject  
-- mark: number[] - date of assessment, mark itself, homework / test / class work items for each student  
+- mark: number[] - date of assessment, mark itself, homework / test / class work items for each student 
+- attendance: [number, Student, string][] - attendance date, student, action (present / absent / sick / reasonable absence)
  
 
 # Assignment
 ### **imported to**  
 *Subject*  
   
-- text: string - text of the assignment  
+- form: Form - which grade assignment for
+- subject: Subject - name of the subject  
 - creationDate: number - date when task is given  
+- text: string - text of the assignment  
 - isDone: boolean - yes or no  
-- isSeen: boolean - did teacher see finished task  
 - isMarked: boolean - was mark announced  
 - dueDate: number - date to be done  
-- subject: Subject - name of the subject  
 - teacher: Teacher - teacher to assess  
 - mark: [Form, Student, number][] - final mark for pupils of given grade  
  
@@ -102,7 +102,6 @@ News*
 Form(StudentSchedule)*  
 
 ### **Shedule**
-- lessonsNet: [Subject, [string, number, number], number][]  - subject, time (week day, start time, end time), room number  
 - durance: number - durance for this timetable in WEEKS  
 - startDate: number - start date for this specific schedule (MONDAY)  
 
