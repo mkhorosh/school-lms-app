@@ -1,0 +1,76 @@
+{
+    "5A": {
+        "russian": [{
+            "20220901": {
+                "creationDate": 20220901,
+                "dueDate": 202109102,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "literature": [{
+            "20220901": {
+                "creationDate": 20220901,
+                "dueDate": 202109102,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "math": [{
+            "20220901": {
+                "creationDate": 20220901,
+                "dueDate": 202109102,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "english": [{
+            "20220903": {
+                "creationDate": 20220903,
+                "dueDate": 20210906,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "nature": [{
+            "20220903": {
+                "creationDate": 20220903,
+                "dueDate": 20210910,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "art": [{
+            "20220901": {
+                "creationDate": 20220901,
+                "dueDate": 20210908,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "pe": [{
+            "20220906": {
+                "creationDate": 20220906,
+                "dueDate": 20210907,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }],
+        "music": [{
+            "20220903": {
+                "creationDate": 20220903,
+                "dueDate": 20210910,
+                "text": "",
+                "isDone": false,
+                "isMarked": false
+            }
+        }]
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "russian": {
+        "20210901": {
+            "student1": {
+                "name": "Беляева Сильвия Кирилловна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student2": {
+                "name": "Биндарева Сильвия Кирилловна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student3": {
+                "name": "Большакова Марьяна Феликсовна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student4": {
+                "name": "Герасимова Риана Геннадиевна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student5": {
+                "name": "Егоров Азарий Адольфович",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student6": {
+                "name": "Жуков Эрнест Семенович",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student7": {
+                "name": "Лобанова Дария Егоровна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student8": {
+                "name": "Миронов Пантелей Ярославович",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student9": {
+                "name": "Мясникова Муза Онисимовна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            },
+            "student10": {
+                "name": "Никитина Тамара Юрьевна",
+                "attendance": "",
+                "stats": {
+                    "homework": "",
+                    "classwork": "",
+                    "test": "",
+                    "exam": ""
+                }
+            }
+
+        }
+    },
+    "literature": {},
+    "math": {},
+    "english": {},
+    "nature": {},
+    "art": {},
+    "pe": {},
+    "music": {}
+}

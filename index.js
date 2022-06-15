@@ -5,6 +5,14 @@ const express = require('express')
 const http = require('http')
 // const socket = require('socket.io')
 
+const users = require('./data/users.json')
+const forms = require('./data/forms.json')
+const subjects = require('./data/subjects.json')
+const schedules = require('./data/schedules.json')
+const marks = require('./data/marks.json')
+const assignments = require('./data/assignments.json')
+
+
 const PORT = 3000;
 const IP = '127.0.0.1'
 const BACKLOG = 100
@@ -12,14 +20,29 @@ const BACKLOG = 100
 
 const app = express();
 const server = http.createServer(app);
-
-const data = {
-    "name": "vishal",
-    "email": "abc@gmail.com"
-}
   
-app.get("/storage", function (req, res) {
-    res.json(data);
+app.get("/users", function (req, res) {
+    res.json(users);
+});
+
+app.get("/forms", function (req, res) {
+    res.json(forms);
+});
+
+app.get("/subjects", function (req, res) {
+    res.json(subjects);
+});
+
+app.get("/schedules", function (req, res) {
+    res.json(schedules);
+});
+
+app.get("/marks", function (req, res) {
+    res.json(marks);
+});
+
+app.get("/assignments", function (req, res) {
+    res.json(assignments);
 });
 
 // const io = new Server(server);
