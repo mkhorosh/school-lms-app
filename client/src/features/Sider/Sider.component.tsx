@@ -28,11 +28,6 @@ export class Sider extends React.Component {
                 onCollapse={this.onCollapse}
                 theme={'light'}
             >
-                <img
-                    src="https://schoollog.in/assets/images/logo-non-outlined.svg"
-                    alt="logo"
-                    width="80%"
-                />
                 <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" icon={<HomeOutlined />}>
                         Текущее

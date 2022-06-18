@@ -1,40 +1,28 @@
 import { Avatar, List } from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { User } from '../common/User';
+import { getClassmates } from '../store/actions/user.actions';
+import { RootState } from '../store/reducers/rootReducer';
 
-const testData = [
-    {
-        id: 234,
-        name: { first: 'Марина', last: 'Хорошилова' },
-        email: 'marina@gmail.com'
-    },
-    {
-        id: 245,
-        name: { first: 'Марина', last: 'Хорошилова' },
-        email: 'marina@gmail.com'
-    },
-    {
-        id: 225647,
-        name: { first: 'Марина', last: 'Хорошилова' },
-        email: 'marina@gmail.com'
-    },
-    {
-        id: 78,
-        name: { first: 'Марина', last: 'Хорошилова' },
-        email: 'marina@gmail.com'
-    },
-    {
-        id: 90,
-        name: { first: 'Олеся', last: 'Сергеева' },
-        email: 'olesya@gmail.com'
-    }
-];
+interface ClassPageProps {
+    classmates: User[];
+    getClassmatesAction: () => void;
+}
 
-export const ClassPage = () => {
+export const ClassPage = ({
+    classmates,
+    getClassmatesAction
+}: ClassPageProps) => {
+    useEffect(() => {
+        getClassmatesAction();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [classmates]);
     return (
         <>
             <h1>Мой класс:</h1>
             <List
-                dataSource={testData}
+                dataSource={classmates}
                 renderItem={(item) => (
                     <List.Item key={item.id}>
                         <List.Item.Meta
@@ -45,11 +33,7 @@ export const ClassPage = () => {
                                     }
                                 />
                             }
-                            title={
-                                <a href="https://ant.design">
-                                    {item.name.first} {item.name.last}
-                                </a>
-                            }
+                            title={<a href="https://ant.design">{item.name}</a>}
                             description={item.email}
                         />
                     </List.Item>
@@ -58,3 +42,11 @@ export const ClassPage = () => {
         </>
     );
 };
+
+const mapStateToProps = (state: RootState) => ({
+    classmates: state.user.classmates
+});
+
+export default connect(mapStateToProps, {
+    getClassmatesAction: getClassmates
+})(ClassPage);
