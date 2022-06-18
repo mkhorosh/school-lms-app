@@ -1,0 +1,39 @@
+{
+    "subjects": [
+        "Русский язык", 
+        "Литература", 
+        "Математика", 
+        "Английский язык", 
+        "Природоведение", 
+        "Физическая культура", 
+        "Изобразительное искусство", 
+        "Музыкальное воспитание"
+    ], 
+    "":"",
+    "lesson": {
+        "subject": "Музыкальное воспитание",
+        "":""
+    },
+    "russian": {},
+    "literature": {},
+    "math": {},
+    "english": {},
+    "nature": {},
+    "art": {},
+    "pe": {},
+    "music": {},
+    " ": {
+        "form": "Form",
+        "text": "string",
+        "creationDate": "number",
+        "isDone": "boolean",
+        "isSeen": "boolean",
+        "isMarked": "boolean",
+        "dueDate": "number",
+        "subject": "Subject",
+        "teacher": "Teacher",
+        "marks": ["Form", "Student", "number"]
+    }
+}
+
+

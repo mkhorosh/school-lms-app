@@ -1,0 +1,399 @@
+{
+    "studentSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "russian": {
+                "subject": "Русский язык",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 850,
+                        "endTime": 930
+                    }],
+                "room": 101
+                }
+            },
+            {
+            "literature": {
+                "subject": "Литература",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    }],
+                "room": 101
+                }
+            },
+            {
+            "math": {
+                "subject": "Математика",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 800,
+                        "endTime": 840
+                    }],
+                "room": 102
+                }
+            },
+            {
+            "english": {
+                "subject": "Английский язык",
+                "form": "5A",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    }],
+                "room": 103
+                }
+            },
+            {
+            "nature": {
+                "subject": "Природоведение",
+                "form": "5A",
+                "days": [{
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 800,
+                        "endTime": 840
+                    }],
+                "room": 104
+                }
+            },
+            {
+            "art": {
+                "subject": "Изобразительное искусство",
+                "days": [{
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    }],
+                "room": 104
+                }
+            },
+            {
+            "pe": {
+                "subject": "Физическая культура",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 850,
+                        "endTime": 930
+                    }],
+                "room": 100
+                }
+            },
+            {
+            "music": {
+                "subject": "Музыкальное воспитание",
+                "days": [{
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 950,
+                        "endTime": 1030
+                    }],
+                "room": 105
+                }
+            }
+        ]
+    },
+    "rusLitSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "russian": {
+                "subject": "Русский язык",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 850,
+                        "endTime": 930
+                    }],
+                "room": 101
+                }
+            },
+            {
+            "literature": {
+                "subject": "Литература",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    }],
+                "room": 101
+                }
+            }
+        ]
+    },
+    "matSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "math": {
+                "subject": "Математика",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 850,
+                        "endTime": 930
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 800,
+                        "endTime": 840
+                    }],
+                "room": 102
+                }
+            }
+        ]
+    },
+    "angSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "english": {
+                "subject": "Английский язык",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    }],
+                "room": 103
+                }
+            }
+        ]
+    },
+    "prirIzoSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "nature": {
+                "subject": "Природоведение",
+                "days": [{
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 800,
+                        "endTime": 840
+                    }],
+                "room": 104
+                }
+            },
+            {
+            "art": {
+                "subject": "Изобразительное искусство",
+                "days": [{
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 1130, 
+                        "endTime": 1210
+                    }],
+                "room": 104
+                }
+            }
+        ]
+    },
+    "physSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "pe": {
+                "subject": "Физическая культура",
+                "days": [{
+                        "form": "5A",
+                        "day": "Понедельник",
+                        "startTime": 1040, 
+                        "endTime": 1120
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Вторник",
+                        "startTime": 950,
+                        "endTime": 1030
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Среда",
+                        "startTime": 800,
+                        "endTime": 840
+                    },
+                    {
+                        "form": "5A",
+                        "day": "Четверг",
+                        "startTime": 850,
+                        "endTime": 930
+                    }],
+                "room": 100
+                }
+            }
+        ]
+    },
+    "muzSchedule": {
+        "startDate": 20210901,
+        "durance": 8,
+        "timetable": [{
+            "music": {
+                "subject": "Музыкальное воспитание",
+                "days": [{
+                        "form": "5A",
+                        "day": "Пятница",
+                        "startTime": 950,
+                        "endTime": 1030
+                    }],
+                "room": 105
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "userS1": {
+        "login": "pupil1",
+        "password": "pupil#1",
+        "name": "Беляева Сильвия Кирилловна",
+        "email": "pupil1@email.com",
+        "role": "student",
+        "isClassPresident": true,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS2": {
+        "login": "pupil2",
+        "password": "pupil#2",
+        "name": "Биндарева Сильвия Кирилловна",
+        "email": "pupil2@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS3": {
+        "login": "pupil3",
+        "password": "pupil#3",
+        "name": "Большакова Марьяна Феликсовна",
+        "email": "pupil3@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS4": {
+        "login": "pupil4",
+        "password": "pupil#4",
+        "name": "Герасимова Риана Геннадиевна",
+        "email": "pupil4@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS5": {
+        "login": "pupil5",
+        "password": "pupil#5",
+        "name": "Егоров Азарий Адольфович",
+        "email": "pupil5@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS6": {
+        "login": "pupil6",
+        "password": "pupil#6",
+        "name": "Жуков Эрнест Семенович",
+        "email": "pupil6@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS7": {
+        "login": "pupil7",
+        "password": "pupil#7",
+        "name": "Лобанова Дария Егоровна",
+        "email": "pupil7@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS8": {
+        "login": "pupil8",
+        "password": "pupil#8",
+        "name": "Миронов Пантелей Ярославович",
+        "email": "pupil8@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A"
+    },
+    "userS9": {
+        "login": "pupil9",
+        "password": "pupil#9",
+        "name": "Мясникова Муза Онисимовна",
+        "email": "pupil9@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userS10": {
+        "login": "pupil10",
+        "password": "pupil#10",
+        "name": "Никитина Тамара Юрьевна",
+        "email": "pupil10@email.com",
+        "role": "student",
+        "isClassPresident": false,
+        "form": "5A",
+        "homeRoomTeacher": "Белоусова Фатима Алексеевна"
+    },
+    "userT1": {
+        "login": "teacher1",
+        "password": "teacher#1",
+        "name": "Белоусова Фатима Алексеевна",
+        "email": "teacher1@email.com",
+        "role": "teacher",
+        "isHomeTeacher": true,
+        "subjects": ["Русский язык", "Литература"],
+        "room": 101
+    },
+    "userT2": {
+        "login": "teacher2",
+        "password": "teacher#2",
+        "name": "Кузнецова Виктория Михайловна",
+        "email": "teacher2@email.com",
+        "role": "teacher",
+        "isHomeTeacher": false,
+        "subjects": ["Математика"],
+        "room": 102
+    },
+    "userT3": {
+        "login": "teacher3",
+        "password": "teacher#3",
+        "name": "Кузьмина Алиса Артёмовна",
+        "email": "teacher3@email.com",
+        "role": "teacher",
+        "isHomeTeacher": false,
+        "subjects": ["Английский язык"],
+        "room": 103
+    },
+    "userT4": {
+        "login": "teacher4",
+        "password": "teacher#4",
+        "name": "Михайлова Вероника Денисовна",
+        "email": "teacher4@email.com",
+        "role": "teacher",
+        "isHomeTeacher": false,
+        "subjects": ["Природоведение", "Изобразительное искусство"],
+        "room": 104
+    },
+    "userT5": {
+        "login": "teacher5",
+        "password": "teacher#5",
+        "name": "Новиков Мирон Олегович",
+        "email": "teacher5@email.com",
+        "role": "teacher",
+        "isHomeTeacher": false,
+        "subjects": ["Физическая культура"],
+        "room": 100
+    },
+    "userT6": {
+        "login": "teacher6",
+        "password": "teacher#6",
+        "name": "Пономарев Богдан Максимович",
+        "email": "teacher6@email.com",
+        "role": "teacher",
+        "isHomeTeacher": false,
+        "subjects": ["Музыкальное воспитание"],
+        "room": 105
+    }
+}
