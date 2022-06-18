@@ -7,23 +7,17 @@ import {
     UserOutlined
 } from '@ant-design/icons';
 import { Menu } from 'antd';
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { StyledSider } from './Sider.style';
 
-export class Sider extends Component {
+export class Sider extends React.Component {
     state = {
         collapsed: false
     };
 
     onCollapse = (collapsed: boolean) => {
         this.setState({ collapsed });
-    };
-
-    toggle = () => {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
     };
 
     render() {
@@ -34,11 +28,6 @@ export class Sider extends Component {
                 onCollapse={this.onCollapse}
                 theme={'light'}
             >
-                <img
-                    src="https://schoollog.in/assets/images/logo-non-outlined.svg"
-                    alt="logo"
-                    width="80%"
-                />
                 <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" icon={<HomeOutlined />}>
                         Текущее
